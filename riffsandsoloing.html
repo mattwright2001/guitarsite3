@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title>Open Chords</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="openchords.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OPEN CHORDS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RIFFS AND SOLOING</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">OPEN CHORDS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">BARRE CHORDS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">RIFFS AND SOLOING</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large">EMBELISHING</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large">SOURCES</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">MATT'S GUITAR</h2>
+  	<h3 class="w3-wide">Reading Tablature</h3>
+    <p class="w3-justify">Tablature (tab for short) is how guitarists read music.  We use tab because traditional written music is not very helpful to guitarist.  Instead of telling us what note to play like traditional music, tab tells us what fret to play what string on.  Tablature works very similar to chord diagrams, in that it tells us what string to play ad how it should be fingered.  Tab has six horizontal lines representing the six strings of a guitar.  The top string represents the highest pitched string, the High E, while the bottem string represents the lowest pitched string represents the lowest pitch string, the Low E.  The numbers on the lines represent what fret should be played on each string.</p>
+<h3>Scales</h3>
+      <p class="w3-justify">*This is very difficult to understand from reading. It is much easier to understand when in person.</p>
+    <h4>Major Scales</h4>
+    <p class="w3-justify">A scale is any set of notes, ordered in either accending or decending order, based on pitch within an octave. Major scales follow a set pattern, as follows, from any note:Whole Step, Whole Step, Half Step, Whole Step, Whole Step, Whole Step, Half Step.  What this means is you would start with any random note, and go through the pattern playing all eight notes to complete the scale.  The notes of a scale can be played in any order whatsoever and it will sound good.  This is the basis of improvising and soloing.</p>
+    <h4>Pentatonic Scales</h4>
+        <p class="w3-justify">A pentatonic scale uses five notes of an octave instead of eight like the major scale. On the guitar, to play a pentatonic, you would play any note on the Low E string, then play the note 3 half steps higher.  After this you would go to the A string and go up a whole step. You would do this for both the D and G strings.  After this you would go the the same fret as before and go down 3 half steps again.  You would repeat this for the High E string.  This sound complicated reading this, but in practice its not hard to understand.</p>
+    <img src="https://www.uberchord.com/wp-content/uploads/2016/06/A-Minor-Pentatonic-Scale-1st-Position-e1466584881511.jpg" width="300px">
+<h3>Tips</h3>
+    <p class="w3-justify">I only have one tip, don't be afraid to make a mistake.  The great thing about soloing is that if you mess up, its really easy to play it off like you meant to do what you did.</p>
+</div>
+
+  
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
